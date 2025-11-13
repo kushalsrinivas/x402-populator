@@ -1,0 +1,63 @@
+{
+  "network": {
+    "name": "fuji",
+    "chainId": 43113,
+    "rpcUrl": "https://api.avax-test.network/ext/bc/C/rpc",
+    "erc8004": {
+      "identityRegistry": "0x96eF5c6941d5f8dfB4a39F44E9238b85F01F4d29",
+      "reputationRegistry": "0xDC61Ea0B4DC6f156F72b62e59860303a4753033F",
+      "validationRegistry": "0x467363Bd781AbbABB089161780649C86F6B0271B"
+    },
+    "x402": {
+      "facilitatorUrl": "http://testnet.0xgasless.com",
+      "domainName": "A402",
+      "domainVersion": "1",
+      "verifyingContract": "0x8BD697733c31293Be2327026d01aE393Ab2675C4"
+    }
+  },
+  "wallets": [
+    {
+      "name": "Wallet 1",
+      "privateKey": "9f653d71e464105b1d89c41cc13331c5e49a2c5318bb83980af3775583ac6683",
+      "enabled": true
+    },
+    {
+      "name": "Wallet 2",
+      "privateKey": "cff96dc867d61b39344bd4ac347b8a27d2991429a49ab21965e99800c794b6ab",
+      "enabled": true
+    },
+    {
+      "name": "Wallet 3",
+      "privateKey": "8efb4c762e98c1603718b07b1694b4faad48a1ead2bc0fe9db8148e05886c51f",
+      "enabled": true
+    }
+  ],
+  "tokens": [
+    {
+      "symbol": "USDC",
+      "address": "0x40dAE5db31DD56F1103Dd9153bd806E00A2f07BA",
+      "decimals": 6,
+      "enabled": true
+    }
+  ],
+  "recipients": [
+    "0x7B5D5C918f3faa63238Bbf0aEacBF559C4eBc163",
+    "0x57192BFCA0AAE8C9Edd8E1e9D24be1f24E35E933",
+    "0xA7AE26F5515a618317F2cA43b34A5c0b7eB05cE0"
+  ],
+  "paymentSettings": {
+    "minAmountUSD": 0.1,
+    "maxAmountUSD": 10.0,
+    "minDelaySeconds": 30,
+    "maxDelaySeconds": 300,
+    "maxRetries": 3,
+    "retryDelaySeconds": 60,
+    "approveTokensOnStartup": true
+  },
+  "logging": {
+    "enabled": true,
+    "logFile": "mesh-payments.log",
+    "verbose": true
+  }
+}
+
